@@ -98,7 +98,6 @@ def main():
     # Imprime uma resposta por linha, no formato pedido pelo enunciado.
     sys.stdout.write("\n".join(output))
 
-
 if __name__ == "__main__":
     # Executa o programa apenas quando este arquivo é chamado diretamente.
     main()
