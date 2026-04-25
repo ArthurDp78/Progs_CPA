@@ -24,30 +24,32 @@ int find_award_index(const vector<int>& thresholds, int score, int left, int rig
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
+    
     int n;
     int m;
 
+    cout << "Digite a quantidade de faixas e a quantidade de alunos: ";
     if (!(cin >> n >> m)) {
         return 0;
     }
 
     // Limites que separam uma faixa da outra.
     vector<int> thresholds(n - 1);
+    cout << "Digite os " << n - 1 << " limites entre as faixas: ";
     for (int i = 0; i < n - 1; i += 1) {
         cin >> thresholds[i];
     }
 
     // Premio associado a cada uma das N faixas.
     vector<int> awards(n);
+    cout << "Digite os " << n << " premios das faixas: ";
     for (int i = 0; i < n; i += 1) {
         cin >> awards[i];
     }
 
     // Pontuacoes obtidas pelos M alunos.
     vector<int> scores(m);
+    cout << "Digite as " << m << " pontuacoes dos alunos: ";
     for (int i = 0; i < m; i += 1) {
         cin >> scores[i];
     }
@@ -61,6 +63,7 @@ int main() {
     }
 
     // Imprime os premios na mesma ordem em que os alunos foram informados.
+    cout << "Premios correspondentes: ";
     for (size_t i = 0; i < result.size(); i += 1) {
         if (i > 0) {
             cout << " ";

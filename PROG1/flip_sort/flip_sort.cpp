@@ -80,9 +80,7 @@ long long count_minimum_exchanges(const vector<int>& values) {
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
+    
     int n;
     vector<string> output;
 
