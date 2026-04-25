@@ -110,6 +110,7 @@ int main() {
         }
         cout << output[i];
     }
+    cout << "\n";
 
     return 0;
 }

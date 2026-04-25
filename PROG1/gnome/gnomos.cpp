@@ -63,10 +63,11 @@ int main() {
     // Imprime os premios na mesma ordem em que os alunos foram informados.
     for (size_t i = 0; i < result.size(); i += 1) {
         if (i > 0) {
-            cout << ' ';
+            cout << " ";
         }
         cout << result[i];
     }
+    cout << "\n";
 
     return 0;
 }
